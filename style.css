@@ -1,0 +1,104 @@
+:root {
+    --primary: #f8c8dc;
+    --accent:#ff69b4;
+    --gradient-bg: linear-gradient(to right #f8c8dc,#ff69b4, white);
+    --teks:white;
+}
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#fff0f5;
+    color:var(--text);
+}
+
+header {
+    background:linear-gradient(to right #f8c8dc, #f8c8dc, #fff0f5);
+    color: #fff0f5;
+    padding: 60px 20px;
+    text-align:center;
+}
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom:10px;
+}
+
+header image{
+    fonr-size:2.8rem;
+    margin-bottom:10px;
+    animation bounce: 2s;
+}
+
+@keyframes bouncess {
+0% 20% 40% 60%{
+    40%{
+        transform: transalateY(-30px);
+    }
+    60% {
+        transform:transalateY(-10px);
+    }
+}
+
+.class-btn {
+    background::var(--pink)
+    color:#d04894;
+    padding: 12px 30px;
+    margin-top:20px;
+    border-radius:25px;
+    border:0;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-class:hover {
+    background-color:#fff0f5;
+}
+
+.cta {
+    background:var(--white);
+    padding: 60px 20px;
+    text-align:center;
+}
+
+.step {
+    gap:20px;
+    margin-top:20px;
+    border:bold;
+    padding: 30px, 20px;
+    background: white;
+    border-radius: 25px;
+    transition:transform: 0.3 ease;
+}
+
+.step i {
+    color:var(--pink)
+    margin-bottom:10px;
+    fonr-size:2.8rem;
+    cursor:pointer;
+}
+
+.step h1 {
+    font-size:2.8rem;
+    margin-bottom:10px;
+}
+
+.review {
+    border-top:#d04894;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+}
+section {
+    padding: 20px 20px;
+    margin-bottom;10px;
+    text align;center;
+}
+
+
+    
+
+
