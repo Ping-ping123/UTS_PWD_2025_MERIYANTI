@@ -1,13 +1,17 @@
 :root {
-    --primary: #f8c8dc;
-    --accent:#ff69b4;
-    --gradient-bg: linear-gradient(to right #f8c8dc,#ff69b4, white);
+    --pink-muda: #f8c8dc;
+    --pink-utama:#ff69b4;
+    --pink-tua: linear-gradient(to right #f8c8dc,#ff69b4, white);
     --teks:white;
+    --bg-soft:#fff0f5;
 }
+
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
+
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:#fff0f5;
@@ -20,9 +24,11 @@ header {
     padding: 60px 20px;
     text-align:center;
 }
+
 header h1 {
     font-size: 2.8rem;
     margin-bottom:10px;
+    animation: bounce 2s;
 }
 
 header image{
@@ -32,29 +38,30 @@ header image{
 }
 
 @keyframes bouncess {
-0% 20% 40% 60%{
-    40%{
-        transform: transalateY(-30px);
-    }
-    60% {
-        transform:transalateY(-10px);
-    }
+0% {
+    transform: translate(0);
+}
+40% {
+    transform: translate(-30px);
+}
+60% {
+    transform: translate(-10px);
+}
+100% {
+    transform: translate(0);
+}
 }
 
-.class-btn {
-    background::var(--pink)
-    color:#d04894;
+btn {
+    display: inline-block;
+    margin-top: 20px;
     padding: 12px 30px;
-    margin-top:20px;
-    border-radius:25px;
-    border:0;
-    color: white;
-    cursor: pointer;
-
 }
 
-.btn-class:hover {
-    background-color:#fff0f5;
+.btn:hover {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .cta {
@@ -97,8 +104,3 @@ section {
     margin-bottom;10px;
     text align;center;
 }
-
-
-    
-
-
